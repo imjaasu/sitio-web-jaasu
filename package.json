@@ -1,0 +1,15 @@
+{
+  "name": "sito-web-jaasu",
+  "version": "1.0.0",
+  "description": "sitio web personal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Hernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "sass": "^1.77.8"
+  }
+}
