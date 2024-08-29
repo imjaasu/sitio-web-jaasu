@@ -1,5 +1,6 @@
 .bienvenida-titulo{
     margin-top: 10rem;
+    margin-bottom: 10rem;
     max-width: 90rem;
     h1{
         text-align: left;
@@ -13,5 +14,11 @@
         background: linear-gradient(90deg, $morado, $azulClaro);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+    }
+
+    p{
+        font-size: 2.2rem;
+        color: $blanco;
+
     }
 }
