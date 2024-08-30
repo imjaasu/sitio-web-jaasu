@@ -3,12 +3,16 @@
         color: $blanco;
         font-weight: $bold;
     }
+
+    margin-bottom: 5rem;
+    margin-top: 5rem
 }
 
 .datos-contenido{
-    @include tablet{
+    @include desktop{
         @include grid(2, 5rem);
         align-items: center;
+
     }
 
 }
@@ -18,13 +22,72 @@
         color: $blanco;
         font-size: 2.2rem;
     }
+
+    a{
+        @include boton($azulClaro, inline-block);
+    }
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+
+    @include desktop{
+        justify-content: left;
+        
+    }
 }
 
 .datos-imagen{
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    //border: 3px solid $azulClaro;
+    //box-shadow: 0 0 10px 2px $azulClaro;
+    //border-radius: 5px;
+    
+    padding: 0 10rem;
+
+
+    @include tablet{
+
+    }
+
     img{
         border-radius: 50%;
         width: 30rem;
+        //box-shadow: 0 0 10px 2px $azulClaro;
+        //border: 3px solid $morado;
     }
+
+    h3{
+        color: $blanco;
+    }
+}
+
+.info-entrada{
+    display: flex;
+    gap: 1rem;
+
+    img{
+        width: 5rem;
+    }
+}
+
+.datos-contacto{
+    h3, p{
+        color: $blanco;
+    }
+}
+
+.prueba{
+    height: 50rem;
+    background-color: #090b0c;
+    opacity: 0.8;
+    background-image:  linear-gradient(#00344f 1.8px, transparent 1.8px), linear-gradient(to right, #00344f 1.8px, #090b0c 1.8px);
+    background-size: 36px 36px;
 }

@@ -23,7 +23,8 @@
 }
 
 @mixin boton($bgColor, $display){
-    background-color: $bgColor;
+    border: 1px solid $bgColor;
+    border-radius: 5px;
     color: $blanco;
     font-weight: $bold;
     text-decoration: none;
@@ -32,8 +33,14 @@
     margin-top: $separacion / 2;
     text-transform: uppercase;
     display: $display;
-
+    transition: background-color 0.3s ease, 
+        box-shadow 0.3s ease, 
+        color 0.3s ease;
+    
+    
     &:hover{
-        background-color: darken($bgColor, 5);
+        background-color: $bgColor;
+        color: $negro;
+        box-shadow: 0 0 10px 2px $bgColor;
     }
 }
