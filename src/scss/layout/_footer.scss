@@ -15,9 +15,11 @@
 .contenido-footer{
     display: flex;
     flex-direction: column;
+
     
     @include tablet{
         display: flex;
+        flex-direction: row;
         gap: 10rem;
     }
 }
@@ -28,7 +30,6 @@
         display: flex;
         gap: 3rem;
         align-items: center;
-        
     }
 
     img{
@@ -55,4 +56,15 @@
             color: $azulClaro;
         }
     }
+}
+
+.contacto{
+    display: inline-block;
+
+    p{
+        font-size: 2.2rem;
+        margin: 0;
+        text-align: left;
+    }
+    
 }
