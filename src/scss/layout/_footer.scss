@@ -1,88 +1,81 @@
 .footer{
-    h3{
-        display: inline-block;
+    h3, p, a{
         color: $blanco;
-        font-weight: $bold;
-        margin-top: 5rem;
     }
 
-    p{
-        color: $blanco;
-        text-align: center;
-        
+    h3{
+        margin-top: 5rem;
+        font-weight: $bold;
     }
-    
+
+    p, a{
+        font-size: 2.2rem;
+    }
+
+    a{
+        transition: color 0.3s ease; 
+
+        &:hover{
+            
+            color: $azulClaro;
+        }
+    }
+
+    text-align: center;
+
+    @include tablet{
+        text-align: left;
+    }
 }
 
 .contenido-footer{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    gap: 2rem;
+
     @include tablet{
         flex-direction: row;
-        align-items: normal;
         gap: 10rem;
     }
-}
 
-.sociales{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    nav{
-        display: flex;
-        gap: 3rem;
-        align-items: center;
-    }
-
-    img{
-        width: 5rem;
-
-        &:hover{
-
-        }
-    }
 }
 
 .links{
-    text-align: center;
-    @include tablet{      
-    }
-
-    h3{
-        margin-top: 5rem;
-        display: inline-block; 
-    }
+    
     nav{
         display: flex;
         flex-direction: column;
     }
+}
 
-    a{
-        font-size: 2.2rem;
-        color: $blanco;
-        transition: color 0.3s ease;
+.sociales{
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
 
-        &:hover{
-            color: $azulClaro;
+        img{
+            width: 5rem;
         }
     }
 }
 
 .contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     p{
-        font-size: 2.2rem;
         margin: 0;
     }
-    
 }
 
 .copyright{
+    text-align: center;
     margin-top: 5rem;
+}
+
+.links, .contacto, .sociales{
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
 }
