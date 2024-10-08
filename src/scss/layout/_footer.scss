@@ -3,13 +3,13 @@
         display: inline-block;
         color: $blanco;
         font-weight: $bold;
-        text-align: left;
         margin-top: 5rem;
     }
 
     p{
         color: $blanco;
         text-align: center;
+        
     }
     
 }
@@ -20,8 +20,8 @@
     align-items: center;
     
     @include tablet{
-        display: flex;
         flex-direction: row;
+        align-items: normal;
         gap: 10rem;
     }
 }
@@ -30,7 +30,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
     nav{
         display: flex;
@@ -49,6 +48,8 @@
 
 .links{
     text-align: center;
+    @include tablet{      
+    }
 
     h3{
         margin-top: 5rem;
@@ -78,7 +79,6 @@
     p{
         font-size: 2.2rem;
         margin: 0;
-        text-align: left;
     }
     
 }
