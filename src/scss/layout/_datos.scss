@@ -22,9 +22,21 @@
         color: $blanco;
         font-size: 2.2rem;
     }
+}
 
-    a{
-        @include boton($azulClaro, inline-block);
+.redes-sociales{
+    margin: 5rem 0 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    @include desktop{
+        justify-content: start;
+    }
+    gap: 5rem;
+    
+    img{
+        width: 5rem;
+        border: 1px solid $azulClaro;
+        border-radius: 10px;
     }
 }
 
@@ -36,7 +48,10 @@
 
     @include desktop{
         justify-content: left;
-        
+    }
+
+    a{
+        @include boton($azulClaro, inline-block);
     }
 }
 
